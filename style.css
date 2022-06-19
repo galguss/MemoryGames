@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#container{
+    position: relative;
+    width: 98%;
+    height: 738px;
+    margin:0 auto;
+    border: black solid 2px;
+    text-align: center;
+    background-image: url(images/mm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header h1{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 32px;
+    color: rgb(80, 105, 119);
+    padding: 5px 16px;
+    margin-top: 10px;
+}
+
+header #playerA , #playerB{
+    text-align: center;
+    background-color:rgb(27, 16, 234);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+header #playerB{
+    background-color: #f4962b;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 30px;
+}
+
+#cards{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-top:20px; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+#cards > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border-radius: 10px;
+}
+
+#cards > div img {
+    width: 216px;
+    height: 106px;
+    border: rgb(43, 47, 53) solid 5px;
+    border-radius: 10px;
+}
+
+#winner{
+    position: absolute;
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 30%;
+    right: 36%;
+    top: 325px ;
+    height: 100px;
+    background-color: rgba(0, 75, 250, 0.725);
+}
+
+button{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #2af55a;
+    color: white;
+}
+
